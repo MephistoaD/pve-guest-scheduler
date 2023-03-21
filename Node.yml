@@ -1,0 +1,8 @@
+# erwartete zustände für eines nodes:
+# - aktiv im scheduler
+# - ignoriert vom scheduler
+# - cordon
+# - empty
+
+# default ist ignore
+node_state: RUNNING # IGNORE, CORDON, DRAIN

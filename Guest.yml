@@ -1,0 +1,4 @@
+
+guest_state: IGNORED # defaults to MANAGED
+
+# pin passiert über HA gruppe

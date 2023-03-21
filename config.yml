@@ -1,0 +1,22 @@
+# KEEP THE MARGINS AND FILE STRUCTURE!!!
+# Proxmox node address and authorization information
+proxmox:
+  url:
+    ip: 192.168.2.213
+    port: 8006
+  auth:
+    username: 'root@pam'
+    password: '#trivial'
+
+# Balancing Parameters
+parameters:
+  deviation: 10            # Percentage of allowable deviation of the RAM load of the node
+  threshold: 90            # Percentage of maximum load
+  lxc_migration: ON        # Container migration (LXCs are rebooted during migration!!!)
+  only_on_manager: OFF #ON # Only run PLB on the current cluster master
+  sleep_time:              # Time the Scheduler waits before coming back to action
+    sucess: 10
+    error: 15
+
+# Loguru settings
+logging_level: 'DEBUG'  # You can choose 'DEBUG" or "INFO" or "WARNING" or "ERROR"
